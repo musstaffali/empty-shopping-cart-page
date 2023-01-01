@@ -52,14 +52,7 @@ export const Closet = (props) => {
 
 
     animatedBox = () => {
-        Animated.timing(this.animatedWidth, {
-            toValue: 200,
-            duration: 1000
-        }).start()
-        Animated.timing(this.animatedHeight, {
-            toValue: 500,
-            duration: 500
-        }).start()
+
     }
 
 
@@ -69,14 +62,15 @@ export const Closet = (props) => {
     const [showModal, setShowModal] = useState(true)
     return (
         <>
+
             <View style={styles.row}>
                 <Pressable onPress={() => { setShowModal(!showModal); }}>
                     {
                         showModal ? <ExpandButton /> : <CollapseButton />
                     }
                 </Pressable>
-                {/* <ClosetImage /> */}
-                {/* <AddButton /> */}
+                {/* <ClosetImage /> 
+                 <AddButton /> */}
             </View>
             {
                 showModal ? null : <Animated.View style={styles.main}><ClosetBottomModal updateModal={setShowModal} setFigure={handleModelUpdate} /></Animated.View>

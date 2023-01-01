@@ -4,11 +4,10 @@ import React from 'react';
 import type { Node } from 'react';
 import { NativeBaseProvider, Box, Center, Container, Flex, usePropsResolution } from 'native-base';
 import { Home } from './app/pages/Home'
+import Cart from './Cart'
 
 
-/**
- * Comment back in to ignore/suppress warnings (for demoing)
- */
+
 import { LogBox } from 'react-native';
 LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 LogBox.ignoreAllLogs();//Ign
@@ -110,3 +109,20 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+return (
+  <View style={styles.container}>
+    <Text>Open up App.js to start working on your app!</Text>
+    <StatusBar style="auto" />
+    <Cart/>
+  </View>
+);
+}
+
+const styles = StyleSheet.create({
+container: {
+  flex: 1,
+  backgroundColor: '#fff',
+  // alignItems: 'center',
+  // justifyContent: 'center',
+},
+});

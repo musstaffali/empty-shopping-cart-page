@@ -106,6 +106,12 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+  }
 });
 
 export default App;
@@ -116,13 +122,13 @@ return (
     <Cart/>
   </View>
 );
-}
+ 
 
-const styles = StyleSheet.create({
-container: {
-  flex: 1,
-  backgroundColor: '#fff',
-  // alignItems: 'center',
-  // justifyContent: 'center',
-},
-});
+// const styles = StyleSheet.create({
+// container: {
+//   flex: 1,
+//   backgroundColor: '#fff',
+//   // alignItems: 'center',
+//   // justifyContent: 'center',
+// },
+// });

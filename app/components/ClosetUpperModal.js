@@ -90,8 +90,8 @@ const styles = StyleSheet.create({
         display: 'none'
     },
     row: {
-        flex: 3,
-        flexDirection: "row",
+        // flex: 3,
+        // flexDirection: "row",
         width: '80%',
     },
     main: {
@@ -103,10 +103,7 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     image: {
-        marginTop: 150,
-        marginBottom: 10,
-        width: '50%',
-        height: 350,
-        flex: 3
+        width: '100%',
+        height: '100%'
     }
 });

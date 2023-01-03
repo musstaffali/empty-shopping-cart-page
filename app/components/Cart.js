@@ -30,7 +30,7 @@ const Cart = () => {
           >
             <View style={{ margin: 10 }}>
               <Image
-                style={{ width: 50, height: 50, borderRadius: 4 }}
+                style={{ width: 100, height: 100, borderRadius: 8 }}
                 source={{ uri: item.image }}
               />
             </View>

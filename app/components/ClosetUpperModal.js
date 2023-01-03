@@ -90,11 +90,12 @@ const styles = StyleSheet.create({
         display: 'none'
     },
     row: {
-        flex: 1,
+        flex: 3,
         flexDirection: "row",
+        width: '80%',
     },
     main: {
-        height: '75%'
+        height: '75%',
     },
     inputWrap: {
         flex: 5,

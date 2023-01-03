@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Image, AddIcon, ArrowUpIcon, ArrowDownIcon, Slide } from 'native-base';
-import { View, StyleSheet, Pressable, Animated, SafeAreaView } from 'react-native';
+import { View, StyleSheet, Pressable, Animated, SafeAreaView, Text } from 'react-native';
 import { ClosetBottomModal } from './ClosetBottomModal'
+import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, Text, View } from 'react-native';
+import Cart from './Cart.js'
 
 const defaultFigure = require("../assets/images/shorts-transparent.gif");
 const modelHoodie = require("../assets/images/hoodie-transparent.gif");
@@ -69,6 +72,7 @@ export const Closet = (props) => {
                         showModal ? <ExpandButton /> : <CollapseButton />
                     }
                 </Pressable>
+                <Cart/>
                 {/* <ClosetImage /> 
                  <AddButton /> */}
             </View>
